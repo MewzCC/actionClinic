@@ -1,29 +1,48 @@
-# 🏥 actionClinic
+<p align="center">
+  <h1 align="center">🏥 actionClinic</h1>
+  <p align="center">A Flutter prototype for task planning, focus supervision and procrastination intervention.</p>
+</p>
 
-> 🎯 行动治疗所是一款基于 Flutter 的跨平台拖延干预与专注监督应用原型。
+<p align="center">
+  <img alt="Flutter" src="https://img.shields.io/badge/Flutter-cross--platform-40C4FF">
+  <img alt="Dart" src="https://img.shields.io/badge/Dart-3.x-0175C2">
+  <img alt="Platform" src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Web%20%7C%20Desktop-22C55E">
+  <img alt="Version" src="https://img.shields.io/badge/Version-1.0.0%2B1-111827">
+</p>
 
-它围绕“计划任务、开始行动、倒计时监督、超时提醒、惩罚反馈、桌面小组件”构建完整闭环，适合作为移动端效率产品、行为干预工具和 Flutter 跨平台原型的参考项目。
+<p align="center">
+  行动治疗所是一款跨平台拖延干预与专注监督应用原型。它围绕“计划任务、开始行动、倒计时监督、超时提醒、惩罚反馈、桌面小组件”构建完整闭环。
+</p>
 
-![Flutter](https://img.shields.io/badge/Flutter-cross--platform-40C4FF)
-![Dart](https://img.shields.io/badge/Dart-3.x-0175C2)
-![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Web%20%7C%20Desktop-22C55E)
-![Version](https://img.shields.io/badge/Version-1.0.0%2B1-111827)
+<p align="center">
+  <a href="#-quick-start">Quick Start</a> ·
+  <a href="#-view-samples">View Samples</a> ·
+  <a href="#-features">Features</a> ·
+  <a href="#-android-widgets">Android Widgets</a>
+</p>
 
 ---
 
-## 📸 应用预览
+## 👀 View Samples
 
-| 🏠 首页 | 📋 行动计划 |
-| --- | --- |
-| ![首页预览](docs/preview/home.png) | ![行动计划预览](docs/preview/plan.png) |
+![actionClinic app preview](docs/preview/overview.png)
 
-| ⏱️ 专注执行 | 🚨 惩罚提醒 |
+<details>
+<summary>展开查看单页预览</summary>
+
+| Home | Plan |
 | --- | --- |
-| ![专注执行预览](docs/preview/focus.png) | ![惩罚提醒预览](docs/preview/punishment.png) |
+| ![Home](docs/preview/home.png) | ![Plan](docs/preview/plan.png) |
+
+| Focus | Alert |
+| --- | --- |
+| ![Focus](docs/preview/focus.png) | ![Alert](docs/preview/punishment.png) |
+
+</details>
 
 ---
 
-## ✨ 项目简介
+## ✨ Overview
 
 🧠 actionClinic 的目标不是普通待办清单，而是把“拖延前的计划”和“拖延后的惩罚提醒”都做进一个可交互应用里。用户可以创建今日行动计划，设置开始时间、截止时间、专注时长、宽限时间、验证方式和惩罚强度；应用会在规定时间内进行倒计时监督，并在超时后触发提醒或全屏惩罚页。
 
@@ -31,7 +50,7 @@
 
 ---
 
-## 🌟 功能亮点
+## 🌟 Features
 
 - 🏠 首页总览：展示今日主目标、任务进度、专注时长、拖延次数、执行率和今日任务列表。
 - 📝 行动计划：支持新增任务、编辑任务、删除任务、时间选择、专注时长、宽限时间、验证方式、惩罚规则和强度设置。
@@ -46,7 +65,7 @@
 
 ---
 
-## 🧩 页面模块
+## 🧩 Pages
 
 - 🏠 首页：今日目标、任务列表、统计卡片、惩罚模式入口。
 - 📋 计划：任务创建与编辑、时间配置、行动验证、惩罚规则、退出拦截。
@@ -54,7 +73,7 @@
 - 🚨 惩罚页：超时后的全屏提醒页，强化开始行动反馈。
 - 👤 我的：提醒开关、悬浮窗开关、小组件同步与添加、权限说明、数据重置。
 
-## 🛠️ 技术栈
+## 🛠️ Tech Stack
 
 - 🐦 Flutter / Dart
 - 🎨 Material Design 组件体系
@@ -65,7 +84,7 @@
 
 ---
 
-## 📁 目录结构
+## 📁 Project Structure
 
 ```text
 actionClinic/
@@ -90,22 +109,22 @@ actionClinic/
 └── docs/                    # 产品与技术文档
 ```
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 🔧 环境要求
+### 🔧 Requirements
 
 - Flutter stable
 - Dart 3.x
 - Android Studio / Android SDK
 - Chrome 或 Edge，用于 Web 调试
 
-### 📦 安装依赖
+### 📦 Install
 
 ```powershell
 flutter pub get
 ```
 
-### 🌐 运行 Web
+### 🌐 Run Web
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts\run_web.ps1
@@ -113,19 +132,19 @@ powershell -ExecutionPolicy Bypass -File scripts\run_web.ps1
 
 脚本会固定使用 `3000` 端口；如果端口已被占用，会先结束占用进程再启动。
 
-### 🤖 运行 Android
+### 🤖 Run Android
 
 ```powershell
 flutter run -d android
 ```
 
-### 🧪 构建 Debug APK
+### 🧪 Build Debug APK
 
 ```powershell
 flutter build apk --debug
 ```
 
-### 📦 版本构建
+### 📦 Release Build
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts\build_version.ps1 -Target apk
@@ -139,7 +158,7 @@ releases/行动治疗所_v1.0.0+1/行动治疗所_v1.0.0+1.apk
 
 ---
 
-## 📱 Android 小组件
+## 📱 Android Widgets
 
 安装 Android App 后，可以通过两种方式添加桌面小组件：
 
@@ -153,14 +172,14 @@ releases/行动治疗所_v1.0.0+1/行动治疗所_v1.0.0+1.apk
 
 ---
 
-## 🔐 权限说明
+## 🔐 Permissions
 
 - 🔔 通知权限：用于触发监督提醒和超时提醒。
 - ⏰ 精准闹钟：用于在规定时间内自动提醒。
 - 🪟 悬浮窗权限：用于后续系统级悬浮窗能力扩展。
 - 🛡️ 强制专注：Android 侧使用全屏提醒和锁定任务能力；完全禁止 Home 键通常需要设备所有者或系统屏幕固定授权。
 
-## 💾 数据与持久化
+## 💾 Data Persistence
 
 应用已移除 mock 任务数据。首次启动不会自动生成默认任务，用户创建的任务和设置会保存到本地。
 
@@ -174,7 +193,7 @@ Web 端使用浏览器本地存储。
 
 ---
 
-## ✅ 验证
+## ✅ Verification
 
 ```powershell
 flutter analyze
@@ -188,6 +207,6 @@ flutter build apk --debug
 - `flutter test` 通过
 - `flutter build apk --debug` 通过
 
-## 📝 备注
+## 📝 Note
 
 `pubspec.yaml` 中的 Dart 包名保留为 `procrastination_treatment_app`，这是 Flutter/Dart 包名规范要求。项目目录、原生工程标识、窗口标题和持久化目录已统一为更短的驼峰命名 `actionClinic`。
